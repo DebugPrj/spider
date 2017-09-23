@@ -219,16 +219,3 @@ setInterval(function(){
     });
     console.log( '第' + ++times + '次');
 },interval);
-
-
-/*var http = require('http');
-var req = http.request('http://www.baidu.com/', function (res) {
-    res.setEncoding('utf8');
-    res.on('data', function (chunk) {
-        //响应内容
-        console.log(chunk)
-    });
-});
-req.end(function () {
-    console.log('连接关闭');
-});*/
