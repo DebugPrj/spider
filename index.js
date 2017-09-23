@@ -85,22 +85,6 @@ function dbCount(){
     });
 };
 
-/*function dbGetByConditions(wherestr){
-    //    var wherestr = {'date' : {'$gte':'2017-8-28 11:5:0', '$lte':'2017-8-28 11:7:0'}};
-    var finddata = { 'title' : wherestr.title };   
-    TourismData.find(finddata, function(err, res){
-        if (err)
-            console.log("Error:" + err);
-        else{
-            console.log("dbGetByConditionsCount:" + res.length);
-            //io.emit('ReadFile',res);  
-            if( res.length == 0 ){
-                //console.log(contentObj);
-                dbInsert(wherestr);
-            }
-        }
-    })
-};*/
 
 function dbGetByConditions(wherestr,callback){
     var finddata = { 'title' : wherestr.title };
